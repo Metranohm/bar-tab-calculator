@@ -1,6 +1,17 @@
 # Initialize the tab to 0
 tab = 0
 
+inventory = {}
+
+# Add the items to the inventory
+inventory["beer"] = 5.00
+inventory["wine"] = 8.00
+inventory["whiskey"] = 12.00
+inventory["rum"] = 8.00
+inventory["tequila"] = 10.00
+inventory["ansinthe"] = 15.00
+inventory["mescal"] = 12.00
+
 # Loop until the user is finished entering items
 while True:
   # Get the name and price of the item from the user
