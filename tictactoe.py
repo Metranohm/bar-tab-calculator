@@ -72,9 +72,9 @@ while not game_over:
                 window.blit(o_img, (x, y))
             else:
                 # Draw a white square for an empty cell
-                pygame.draw.rect(window, WHITE)
-                
-                # Check for a winner
+                pygame.draw.rect(window, WHITE, (x, y, CELL_SIZE, CELL_SIZE))
+    
+    # Check for a winner
     for row in range(3):
         if board[row][0] == board[row][1] == board[row][2] and board[row][0] is not None:
             # There is a winner along this row
