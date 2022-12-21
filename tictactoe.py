@@ -58,6 +58,13 @@ while not game_over:
     # Draw the game board
     window.fill(BLACK)
     for row in range(3):
+    # Draw the grid lines
+      for i in range(1, 3):
+    # Vertical lines
+        pygame.draw.line(window, WHITE, (i * CELL_SIZE, 0), (i * CELL_SIZE, BOARD_HEIGHT), 1)
+    # Horizontal lines
+        pygame.draw.line(window, WHITE, (0, i * CELL_SIZE), (BOARD_WIDTH, i * CELL_SIZE), 1)
+  
         for col in range(3):
             # Get the symbol at this position
             symbol = board[row][col]
